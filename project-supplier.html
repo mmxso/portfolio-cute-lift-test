@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGS 实验室流程仿真项目 · Xiaomin's Portfolio</title>
+  <meta name="description" content="NGS 实验室流程仿真项目，动森风格作品集页面。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800;900;1000&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="forest-case-page ngs-case-page">
+  <main class="forest-case-main" id="top">
+    <a class="cartoon-back" href="project-farm.html" aria-label="Back to project field"><span>←</span></a>
+
+    <div class="page-board project-board forest-page-board">
+      <span data-i18n="board.title">NGS Lab</span>
+    </div>
+
+    <div class="case-lang-toggle" aria-label="Language switcher">
+      <button class="case-lang-btn active" type="button" data-lang="zh">中文</button>
+      <button class="case-lang-btn" type="button" data-lang="en">EN</button>
+    </div>
+
+    <section class="forest-hero ngs-hero">
+      <div class="forest-hero-copy">
+        <p class="farm-eyebrow" data-i18n="hero.eyebrow">医疗运营 · 仿真建模项目</p>
+        <h1 data-i18n="hero.title">NGS 实验室流程仿真项目</h1>
+        <p class="forest-subtitle" data-i18n="hero.subtitle">使用离散事件模拟识别流程瓶颈，并优化样本周转时间。</p>
+        <p class="forest-text" data-i18n="hero.text">这个项目围绕下一代测序实验室的样本处理流程展开，通过构建仿真模型、评估系统表现，并测试不同运营优化方案，帮助实验室实现更快、更均衡的样本处理。</p>
+        <div class="forest-actions">
+          <a class="farm-btn primary" href="#results" data-i18n="buttons.viewResults">查看结果</a>
+          <a class="farm-btn" href="project-farm.html" data-i18n="buttons.backField">返回项目农田</a>
+        </div>
+      </div>
+
+      <aside class="lab-cottage-card" aria-label="NGS workflow visual">
+        <div class="lab-roof"></div>
+        <div class="lab-workflow">
+          <div class="lab-node" data-i18n="workflow.book">样本登记</div>
+          <div class="lab-node" data-i18n="workflow.prepare">样本准备</div>
+          <div class="lab-node warning" data-i18n="workflow.load">批量上机</div>
+          <div class="lab-node strong" data-i18n="workflow.seq">测序仪</div>
+          <div class="lab-node" data-i18n="workflow.analysis">分析</div>
+          <div class="lab-node warning" data-i18n="workflow.rework">返工</div>
+          <div class="lab-node strong" data-i18n="workflow.report">报告</div>
+        </div>
+        <div class="forest-kpis">
+          <div><strong>Simul8</strong><span data-i18n="hero.kpi1">仿真模型</span></div>
+          <div><strong>R</strong><span data-i18n="hero.kpi2">数据分析</span></div>
+          <div><strong>DES</strong><span data-i18n="hero.kpi3">流程优化</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="forest-section" id="overview">
+      <div class="forest-section-title">
+        <span class="cat-icon-sign">🧪</span>
+        <div><p class="farm-eyebrow" data-i18n="section.overview">Project Overview</p><h2 data-i18n="overview.title"></h2></div>
+      </div>
+      <div class="forest-paper-card">
+        <p data-i18n="overview.text"></p>
+        <ul class="leaf-list">
+          <li data-i18n="overview.li1"></li>
+          <li data-i18n="overview.li2"></li>
+          <li data-i18n="overview.li3"></li>
+          <li data-i18n="overview.li4"></li>
+        </ul>
+        <div class="cat-tags">
+          <span>Simul8</span><span>R</span><span>Discrete Event Simulation</span><span>Healthcare Operations</span><span>Process Optimisation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="forest-section" id="process">
+      <div class="forest-section-title">
+        <span class="cat-icon-sign">🧭</span>
+        <div><p class="farm-eyebrow" data-i18n="section.workflow">Workflow Model</p><h2 data-i18n="process.title"></h2><p class="forest-section-desc" data-i18n="process.desc"></p></div>
+      </div>
+      <div class="ngs-process-card">
+        <div class="ngs-step"><strong>Book-in</strong><span>BMS</span></div>
+        <div class="ngs-step"><strong>Preparation</strong><span>BMS</span></div>
+        <div class="ngs-step"><strong>Loading</strong><span>Batch queue</span></div>
+        <div class="ngs-step strong"><strong>Sequencer</strong><span>Batch of 32</span></div>
+        <div class="ngs-step"><strong>Analysis</strong><span>FS</span></div>
+        <div class="ngs-step rework"><strong>Rework</strong><span>7% failure loop</span></div>
+        <div class="ngs-step strong"><strong>Reporting</strong><span>FS</span></div>
+      </div>
+    </section>
+
+    <section class="forest-section" id="results">
+      <div class="forest-section-title">
+        <span class="cat-icon-sign">📊</span>
+        <div><p class="farm-eyebrow" data-i18n="section.results">Key Results</p><h2 data-i18n="results.title"></h2><p class="forest-section-desc" data-i18n="results.desc"></p></div>
+      </div>
+      <div class="ngs-kpi-grid">
+        <article class="ngs-kpi"><span data-i18n="results.kpi1.label"></span><strong>2618 → 1590</strong><p data-i18n="results.kpi1.note"></p></article>
+        <article class="ngs-kpi"><span data-i18n="results.kpi2.label"></span><strong>80.7% → 98.0%</strong><p data-i18n="results.kpi2.note"></p></article>
+        <article class="ngs-kpi"><span data-i18n="results.kpi3.label"></span><strong>85% → 79%</strong><p data-i18n="results.kpi3.note"></p></article>
+        <article class="ngs-kpi"><span data-i18n="results.kpi4.label"></span><strong>Load · Report</strong><p data-i18n="results.kpi4.note"></p></article>
+      </div>
+    </section>
+
+    <section class="forest-section" id="scenarios">
+      <div class="forest-section-title">
+        <span class="cat-icon-sign">📝</span>
+        <div><p class="farm-eyebrow" data-i18n="section.scenarios">Scenario Analysis</p><h2 data-i18n="scenario.title"></h2><p class="forest-section-desc" data-i18n="scenario.desc"></p></div>
+      </div>
+      <div class="forest-card-grid three">
+        <article class="forest-mini-card"><h3 data-i18n="scenario.s1.title"></h3><p data-i18n="scenario.s1.text"></p></article>
+        <article class="forest-mini-card"><h3 data-i18n="scenario.s2.title"></h3><p data-i18n="scenario.s2.text"></p></article>
+        <article class="forest-mini-card"><h3 data-i18n="scenario.s3.title"></h3><p data-i18n="scenario.s3.text"></p></article>
+      </div>
+    </section>
+
+    <section class="forest-section" id="reflection">
+      <div class="cat-reflection-card">
+        <p class="farm-eyebrow" data-i18n="section.reflection">Reflection</p>
+        <h2 data-i18n="reflection.title"></h2>
+        <p data-i18n="reflection.text"></p>
+      </div>
+      <div class="forest-actions bottom-actions">
+        <a class="farm-btn primary" href="project-farm.html" data-i18n="buttons.backField">返回项目农田</a>
+        <a class="farm-btn" href="index.html" data-i18n="buttons.backHome">返回首页农场</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const translations = {
+      "en": {
+            "nav.about": "About",
+            "nav.projects": "Projects",
+            "nav.skills": "Skills",
+            "nav.contact": "Contact",
+            "hero.eyebrow": "Healthcare Operations · Simulation Project",
+            "hero.title": "NGS Laboratory Workflow Simulation",
+            "hero.subtitle": "Using discrete event simulation to identify bottlenecks and improve turnaround time.",
+            "hero.text": "This project modelled a next-generation sequencing laboratory workflow, evaluated system performance, and tested operational improvement scenarios to support faster and more balanced sample processing.",
+            "hero.kpi1": "Simulation model",
+            "hero.kpi2": "Data analysis",
+            "hero.kpi3": "Process optimisation",
+            "buttons.viewResults": "View Results",
+            "buttons.back": "Back to Projects",
+            "overview.title": "Project Overview",
+            "overview.text": "The laboratory was experiencing longer turnaround times after taking on additional sample demand from another hospital trust. The key challenge was to understand where delays were building up and how the workflow could be improved without relying heavily on new resources.",
+            "overview.li1": "Built a discrete event simulation model for the end-to-end NGS testing pathway.",
+            "overview.li2": "Used historical LIMS data and client clarification to model process timings, resources and rework loops.",
+            "overview.li3": "Evaluated bottlenecks through turnaround time, queueing time and staff utilisation.",
+            "overview.li4": "Tested practical improvement scenarios including batch size changes and task reallocation.",
+            "process.title": "Workflow Model",
+            "process.desc": "The model captured the core pathway from sample booking to reporting, including batch sequencing and rework after failed analysis.",
+            "results.title": "Key Results",
+            "results.desc": "The simulation identified workload pressure on the senior scientist and long queues around loading, analysis and reporting.",
+            "results.kpi1.label": "Average TaT",
+            "results.kpi1.note": "minutes under the best scenario",
+            "results.kpi2.label": "Within Target",
+            "results.kpi2.note": "after reducing batch size",
+            "results.kpi3.label": "FS Utilisation",
+            "results.kpi3.note": "when rework was reassigned",
+            "results.kpi4.label": "Main Bottlenecks",
+            "results.kpi4.note": "longest queues in base model",
+            "scenario.title": "Scenario Analysis",
+            "scenario.desc": "Several operational changes were tested to compare their impact on turnaround time, queues and staff workload.",
+            "scenario.s1.title": "Reduce Batch Size",
+            "scenario.s1.text": "<strong>Batch 32 → 16</strong> produced the strongest improvement, reducing average TaT and increasing the percentage of samples completed within target.",
+            "scenario.s2.title": "Reassign Rework",
+            "scenario.s2.text": "Allowing BMS to support rework reduced FS workload and helped relieve rework queue pressure.",
+            "scenario.s3.title": "Extend FS Hours",
+            "scenario.s3.text": "Extending FS availability gave moderate improvement, but was less effective than batch size adjustment.",
+            "table.title": "Performance Comparison",
+            "table.desc": "A simplified comparison of key scenarios from the simulation results.",
+            "reflection.title": "What I Learned",
+            "reflection.text": "This project helped me connect data analysis with real operational decision-making. Instead of only reporting numbers, I learned how to translate process data, stakeholder constraints and simulation outputs into practical recommendations that a healthcare team could understand and consider.",
+            "footer.text": "Portfolio website in progress.",
+            "board.title": "NGS Lab",
+            "buttons.backField": "Back to Project Field",
+            "buttons.backHome": "Back to Farm Home",
+            "workflow.book": "Book-in",
+            "workflow.prepare": "Preparation",
+            "workflow.load": "Loading",
+            "workflow.seq": "Sequencer",
+            "workflow.analysis": "Analysis",
+            "workflow.rework": "Rework",
+            "workflow.report": "Reporting",
+            "section.overview": "Project Overview",
+            "section.workflow": "Workflow Model",
+            "section.results": "Key Results",
+            "section.scenarios": "Scenario Analysis",
+            "section.reflection": "Reflection"
+      },
+      "zh": {
+            "nav.about": "关于我",
+            "nav.projects": "作品集",
+            "nav.skills": "技能",
+            "nav.contact": "联系我",
+            "hero.eyebrow": "医疗运营 · 仿真建模项目",
+            "hero.title": "NGS 实验室流程仿真项目",
+            "hero.subtitle": "使用离散事件模拟识别流程瓶颈，并优化样本周转时间。",
+            "hero.text": "这个项目围绕下一代测序实验室的样本处理流程展开，通过构建仿真模型、评估系统表现，并测试不同运营优化方案，帮助实验室实现更快、更均衡的样本处理。",
+            "hero.kpi1": "仿真模型",
+            "hero.kpi2": "数据分析",
+            "hero.kpi3": "流程优化",
+            "buttons.viewResults": "查看结果",
+            "buttons.back": "返回作品集",
+            "overview.title": "项目概览",
+            "overview.text": "该实验室在承接另一家医院的额外样本需求后，样本周转时间逐渐变长。项目的核心挑战是理解延迟积累在哪些环节，并在不大量依赖新增资源的情况下探索可执行的流程优化方案。",
+            "overview.li1": "构建覆盖 NGS 测试全流程的离散事件模拟模型。",
+            "overview.li2": "结合历史 LIMS 数据和客户沟通信息，建模各阶段处理时间、资源限制和返工循环。",
+            "overview.li3": "通过周转时间、队列时间和员工利用率评估流程瓶颈。",
+            "overview.li4": "测试批量大小调整、任务重新分配等可落地优化方案。",
+            "process.title": "流程模型",
+            "process.desc": "模型覆盖从样本录入到结果报告的核心流程，并纳入批量测序和分析失败后的返工循环。",
+            "results.title": "关键结果",
+            "results.desc": "仿真结果显示，高级科学家工作负荷较高，装载、分析和报告环节存在明显队列延迟。",
+            "results.kpi1.label": "平均周转时间",
+            "results.kpi1.note": "最佳方案下的分钟数变化",
+            "results.kpi2.label": "目标内完成率",
+            "results.kpi2.note": "缩小批量后的提升",
+            "results.kpi3.label": "FS 利用率",
+            "results.kpi3.note": "返工任务重新分配后",
+            "results.kpi4.label": "主要瓶颈",
+            "results.kpi4.note": "基础模型中最长等待环节",
+            "scenario.title": "情景分析",
+            "scenario.desc": "项目测试了多个运营调整方案，比较它们对周转时间、队列和员工工作负荷的影响。",
+            "scenario.s1.title": "缩小批量大小",
+            "scenario.s1.text": "<strong>批量 32 → 16</strong> 带来了最明显改善，降低平均周转时间，并提高目标时间内完成比例。",
+            "scenario.s2.title": "重新分配返工任务",
+            "scenario.s2.text": "让 BMS 支持返工任务可以减轻 FS 工作负荷，并明显缓解返工队列压力。",
+            "scenario.s3.title": "延长 FS 工作时间",
+            "scenario.s3.text": "延长 FS 可用时间带来一定改善，但效果不如缩小批量大小明显。",
+            "table.title": "方案表现对比",
+            "table.desc": "下表简化展示了几个关键情景的模拟结果。",
+            "reflection.title": "项目收获",
+            "reflection.text": "这个项目让我把数据分析和真实运营决策联系起来。我学到的不只是呈现数据结果，而是如何把流程数据、利益相关者限制和仿真输出转化为医疗团队能够理解和考虑的实际建议。",
+            "footer.text": "个人作品集网站持续更新中。",
+            "board.title": "NGS Lab",
+            "buttons.backField": "返回项目农田",
+            "buttons.backHome": "返回首页农场",
+            "workflow.book": "样本登记",
+            "workflow.prepare": "样本准备",
+            "workflow.load": "批量上机",
+            "workflow.seq": "测序仪",
+            "workflow.analysis": "分析",
+            "workflow.rework": "返工",
+            "workflow.report": "报告",
+            "section.overview": "Project Overview",
+            "section.workflow": "Workflow Model",
+            "section.results": "Key Results",
+            "section.scenarios": "Scenario Analysis",
+            "section.reflection": "Reflection"
+      }
+};
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+      localStorage.setItem("portfolioLanguage", lang);
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+
+      document.querySelectorAll(".case-lang-btn").forEach((button) => {
+        button.classList.toggle("active", button.dataset.lang === lang);
+      });
+    }
+
+    document.querySelectorAll(".case-lang-btn").forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+
+    setLanguage(localStorage.getItem("portfolioLanguage") || "zh");
+  </script>
+
+</body>
+</html>
